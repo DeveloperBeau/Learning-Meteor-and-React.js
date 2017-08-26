@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 export default class TitleBar extends React.Component {
   renderSubTitle() {
     if (this.props.subTitle) {
-      return <h3>{this.props.subTitle}</h3>
+      return <h3 className="title-bar__subTitle">{this.props.subTitle}</h3>
     }
   }
 
