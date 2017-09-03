@@ -1,5 +1,6 @@
 import React from 'react';
-import {Accounts} from 'meteor/accounts-base';
+import { Meteor } from 'meteor/meteor';
+import { Accounts } from 'meteor/accounts-base';
 
 import {Links} from '../api/links';
 import LinksList from './LinksList';
@@ -14,7 +15,7 @@ export default class Link extends React.Component {
     e.preventDefault();
 
     if (url) {
-      Links.insert({url});
+      Meteor.call('links.insert', url);
       this.refs.url.value = '';
     }
   }
