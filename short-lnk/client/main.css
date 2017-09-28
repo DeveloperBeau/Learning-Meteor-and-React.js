@@ -1,0 +1,27 @@
+/* CSS declarations go here */
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.6rem; }
+
+.boxedView {
+  align-items: center;
+  background: #ddd;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw; }
+
+.boxedView__box {
+  background-color: #fff;
+  padding: 2.4rem;
+  text-align: center;
+  width: 24rem; }
+
+/*# sourceMappingURL=main.css.map */
