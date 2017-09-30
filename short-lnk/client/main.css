@@ -24,4 +24,7 @@ body {
   text-align: center;
   width: 24rem; }
 
+.boxedView__form {
+  display: flex; }
+
 /*# sourceMappingURL=main.css.map */
