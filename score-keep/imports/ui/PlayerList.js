@@ -13,7 +13,7 @@ export default class PlayerList extends React.Component {
         <div className="item">
           <p className="item__message">Add your first player to get started.</p>
         </div>
-      )
+      );
     } else {
       return this.props.players.map((player) => {
         return <Player key={player._id} player={player}/>;
@@ -25,7 +25,7 @@ export default class PlayerList extends React.Component {
     return (
       <div>
         <FlipMove maintainContainerHeight={true}>
-        {this.renderPlayers()}
+          {this.renderPlayers()}
         </FlipMove>
       </div>
     );
@@ -35,4 +35,4 @@ export default class PlayerList extends React.Component {
 
 PlayerList.propTypes = {
   players: PropTypes.array.isRequired
-}
+};
